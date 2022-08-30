@@ -28,6 +28,18 @@ save(){
 
     }
 
+  deleteRow(user, index)
+  {
+    const observable = this.userService.deleteUser(user);
+    observable.subscribe((response:any)=>{
+      console.log(response);
+      this.Users.splice(user);
+    }
+
+    )
+
+  }
+
   constructor(public userService: UserService) { }
 
   ngOnInit(): void {
