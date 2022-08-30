@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "firstname": "Abhi",
+      "lastname": "yadav",
+      "age": 24,
+      "id": 1
+    },
+    {
+      "firstname": "Bhaskar",
+      "lastname": "Bisht",
+      "age": 26,
+      "Gender": "male",
+      "id": 2
+    },
+    {
+      "firstname": "Jyoti",
+      "lastname": "Ydv",
+      "age": 20,
+      "Gender": "female",
+      "id": 3
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "age": 0,
+      "Gender": "male",
+      "id": 4
+    },
+    {
+      "firstname": "Amit",
+      "lastname": "Singh",
+      "age": 32,
+      "Gender": "male",
+      "id": 5
+    },
+    {
+      "firstname": "Akash",
+      "lastname": "Sharma",
+      "age": 23,
+      "Gender": "male",
+      "id": 6
+    },
+    {
+      "firstname": "Alex",
+      "lastname": "Carry",
+      "age": 23,
+      "Gender": "male",
+      "id": 7
+    },
+    {
+      "firstname": "Ruchi",
+      "lastname": "Yadav",
+      "age": 23,
+      "Gender": "female",
+      "id": 8
+    }
+  ]
+}

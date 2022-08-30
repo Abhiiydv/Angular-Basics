@@ -1,0 +1,17 @@
+
+.test{
+
+margin-left: 30px;
+
+
+}
+.main{
+
+    margin: auto;
+    width: 50%;
+    border : 2px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:rgb(145, 199, 243)
+
+}
