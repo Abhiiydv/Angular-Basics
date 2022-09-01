@@ -54,6 +54,13 @@
       "age": 23,
       "Gender": "female",
       "id": 8
+    },
+    {
+      "firstname": "Sam",
+      "lastname": "Curran",
+      "age": 22,
+      "Gender": "male",
+      "id": 9
     }
   ]
 }
