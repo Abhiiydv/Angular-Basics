@@ -1,50 +1,52 @@
 
 <div class="main">
-  <span class="spn">{{title}}</span><hr>
-<div class="row">
+  <div class="row">
     <div class="col">
-    
-    <input type="text" class="form-control" placeholder="Enter your first name" [(ngModel)]= user.firstname>
+      <input type="text" class="form-control" placeholder="First name"  [(ngModel)] = user.firstname  aria-label="First name">
     </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" [(ngModel)] = user.lastname   aria-label="Last name">
+    </div>
+    <br>
+    <div class="col">
+        <input type="number" class="form-control" placeholder="Age" [(ngModel)] = user.age  aria-label="Age">
+      </div>
+  </div>
+  <h3>Select gender</h3>
 
-  <div class="col">
-    <input type="text"  [(ngModel)]= user.lastname
-    placeholder="Enter your last name"  aria-label="Last name" class="form-control">    </div>
+  <div class="form-check">
+    
+    <input class="form-check-input" [(ngModel)] = user.Gender value="Male" type="radio" name="gender" id="male">
+    <label class="form-check-label" for="male">
+      Male
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" [(ngModel)] = user.Gender  value="Female" type="radio" name="gender" id="female" checked>
+    <label class="form-check-label" for="female">
+      Female
+    </label>
+  </div>
 
-<br>
-<div class="col">
+  <button type="button" class="btn btn-success" (click)="save()">Success</button>
+  <br>
+  <br>
+  <button type="button" class="btn btn-success" (click)="sort()">Sort</button>
 
-<input type="number" class="form-control" [(ngModel)]= user.age aria-label="Age" placeholder="Enter your age. ">
-</div><br><br>
-<div class="form-check test">
-  <input class="form-check-input" type="radio" value="male"  [(ngModel)]= user.Gender id="male" name="gender">
-  <label class="form-check-label" for="male">
-    Male
-  </label>
-</div>
-
-<div class="form-check test">
-  <input class="form-check-input" type="radio" value="female"  [(ngModel)]= user.Gender id="female" name="gender">
-  <label class="form-check-label" for="female">
-    Female
-  </label>
-</div>
-</div>
-<div class="text-center">
-<button type="button" class="btn  btn-success"(click)="save()">Success</button></div>
-<br>
-
-<ol class="list-group list-group-numberd">
-  <li *ngFor="let u of Users; index as i "class="list-group-item">
-  <span> {{u.firstname}}</span><br>
-  <span>{{ u.lastname}}</span><br>
-  <span>{{ u.age}}</span><br>
-  <span>{{u.Gender}}</span><br>
-  <button type="button" 
- (click)="deleteRow(u,i)" style="margin-right: 500;" class="btn btn-danger">Delete</button>
-  </li> 
-</ol>
-
+  <ol class="list-group list-group-numbered">
+    <li *ngFor="let u of users;  index as i"class="list-group-item">
+      <span>{{u.firstname }}</span>
+      <br>
+      <span>{{u.lastname}}</span>
+      <br>
+      <span>{{u.age}}</span>
+      <br>
+      <span>{{u.Gender}}</span>
+      <br>
+      <button type="button" (click)="deleteRow(u, i)" style="margin-right:500 ;" class="btn btn-danger">Delete</button>
+    </li>
+    
+  </ol>
 </div>
 
 
